@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "PAoFx9lYChztJOUk5f9eYXdOZVI+9Sqpjp5u2+gYbiNE/0SYq4822fVkrucxbdbrT1gk2UtdHKQ/cKNKmstFag==",
+  "dgSpecHash": "CeKkorYcguqgPKK3P43XytusRhFzIU50E4J3gjttxm3+JkPwQ4y9CTY3wNVSabqvYlxsB+mfmgYqf6oeRd9x2A==",
   "success": true,
   "projectFilePath": "D:\\Project\\02-patika-dot-net-core-orta\\BookStore\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ahmet\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Ahmet\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Ahmet\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.12\\microsoft.aspnetcore.openapi.7.0.12.nupkg.sha512",
+    "C:\\Users\\Ahmet\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Ahmet\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",
     "C:\\Users\\Ahmet\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.13\\microsoft.entityframeworkcore.abstractions.7.0.13.nupkg.sha512",
     "C:\\Users\\Ahmet\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.13\\microsoft.entityframeworkcore.analyzers.7.0.13.nupkg.sha512",
