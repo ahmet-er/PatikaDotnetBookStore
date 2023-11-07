@@ -5,17 +5,18 @@ namespace WebApi.BookOperations.UpdateBook
     public class UpdateBookCommand
     {
         public UpdateBookModel Model { get; set; }
+        public int BookId { get; set; }
         private readonly BookStoreDbContext _dbContext;
         public UpdateBookCommand(BookStoreDbContext dbContext)
         {
             _dbContext = dbContext;
         }
 
-        public void Handle(int id)
+        public void Handle()
         {
-            var book = _dbContext.Books.SingleOrDefault(x => x.Id == id);
+            var book = _dbContext.Books.SingleOrDefault(x => x.Id == BookId);
             if (book is null)
-                throw new InvalidOperationException("Böyle bir kitap bulunamadı.");
+                throw new InvalidOperationException("Güncellenecek kitap bulunamadı.");
 
             book.GenreId = Model.GenreId != default ? Model.GenreId : book.GenreId;
             book.PageCount = Model.PageCount != default ? Model.PageCount : book.PageCount;

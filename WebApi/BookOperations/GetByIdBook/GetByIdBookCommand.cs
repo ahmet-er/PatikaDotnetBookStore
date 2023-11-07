@@ -9,15 +9,16 @@ namespace WebApi.BookOperations.GetByIdBook
     {
         private readonly BookStoreDbContext _dbContext;
         private readonly IMapper _mapper;
+        public int BookId { get; set; }
         public GetByIdBookCommand(BookStoreDbContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
             _mapper = mapper;
         }
 
-        public GetByIdBookViewModel Handle(int id)
+        public GetByIdBookViewModel Handle()
         {
-            var book = _dbContext.Books.Where(book => book.Id == id).SingleOrDefault();
+            var book = _dbContext.Books.Where(book => book.Id == BookId).SingleOrDefault();
              GetByIdBookViewModel vm = _mapper.Map<GetByIdBookViewModel>(book); // new GetByIdBookViewModel();
             // vm.Title = book.Title;
             // vm.PublishDate = book.PublishDate.Date.ToString("dd/MM/yyy");

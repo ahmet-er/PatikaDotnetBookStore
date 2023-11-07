@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "CeKkorYcguqgPKK3P43XytusRhFzIU50E4J3gjttxm3+JkPwQ4y9CTY3wNVSabqvYlxsB+mfmgYqf6oeRd9x2A==",
+  "dgSpecHash": "2yurNo58slgjBXzxw7qaekJYIzGTKuA/xYAVEmDA5QPcf/uajPRPz+2BWJjc4ScCPTDFi+FyZsCA6dRo+7agLQ==",
   "success": true,
   "projectFilePath": "D:\\Project\\02-patika-dot-net-core-orta\\BookStore\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ahmet\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Ahmet\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Ahmet\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
     "C:\\Users\\Ahmet\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.12\\microsoft.aspnetcore.openapi.7.0.12.nupkg.sha512",
     "C:\\Users\\Ahmet\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Ahmet\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",

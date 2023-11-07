@@ -36,3 +36,4 @@ D:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\obj\Debug\net7.0\refint\
 D:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\obj\Debug\net7.0\WebApi.pdb
 D:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\obj\Debug\net7.0\WebApi.genruntimeconfig.cache
 D:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\obj\Debug\net7.0\ref\WebApi.dll
+D:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\bin\Debug\net7.0\FluentValidation.dll
