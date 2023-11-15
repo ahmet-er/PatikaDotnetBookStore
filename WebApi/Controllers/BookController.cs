@@ -32,25 +32,20 @@ namespace WebApi.AddControllers
         {
             GetBooksQuery query = new GetBooksQuery(_context, _mapper);
             var result = query.Handle();
+            
             return Ok(result);
         }
 
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            try
-            {
                 GetByIdBookCommand command = new GetByIdBookCommand(_context, _mapper);
                 command.BookId = id;
                 GetByIdBookCommandValidator validator = new GetByIdBookCommandValidator();
                 validator.ValidateAndThrow(command);
                 var result = command.Handle();
+
                 return Ok(result);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
         }
 
         //Post
@@ -59,8 +54,6 @@ namespace WebApi.AddControllers
         {
             CreateBookCommand command = new CreateBookCommand(_context, _mapper);
 
-            try
-            {
                 command.Model = newBook;
                 CreateBookCommandValidator validator = new CreateBookCommandValidator();
                 validator.ValidateAndThrow(command);
@@ -70,12 +63,6 @@ namespace WebApi.AddControllers
                 //         System.Console.WriteLine($"Property: {item.PropertyName}, Error Message: {item.ErrorMessage}");
                 // else
                 //     command.Handle();
-
-            }
-            catch (System.Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
             return Ok("Kitap başarıyla eklendi.");
         }
 
@@ -83,39 +70,25 @@ namespace WebApi.AddControllers
         [HttpPut("{id}")]
         public IActionResult UpdateBook(int id, [FromBody] UpdateBookModel updatedBook)
         {
-
-            try
-            {
                 UpdateBookCommand command = new UpdateBookCommand(_context);
                 command.Model = updatedBook;
                 command.BookId = id;
                 UpdateBookCommandValidator validator = new UpdateBookCommandValidator();
                 validator.ValidateAndThrow(command);
                 command.Handle();
-            }
-            catch (System.Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            
             return Ok("Kitap başarıyla güncellendi.");
         }
 
         [HttpDelete("{id}")]
         public IActionResult DeleteBook(int id)
         {
-
-            try
-            {
                 DeleteBookCommand command = new DeleteBookCommand(_context);
                 command.BookId = id;
                 DeleteBookCommandValidator validator = new DeleteBookCommandValidator();
                 validator.ValidateAndThrow(command);
                 command.Handle();
-            }
-            catch (System.Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+
             return Ok("Kitap başarıyla silindi.");
         }
     }
