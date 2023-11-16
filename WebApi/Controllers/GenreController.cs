@@ -38,6 +38,7 @@ namespace WebApi.Controllers
         {
             GetGenreDetailQuery query = new GetGenreDetailQuery(_context, _mapper);
             query.GenreId = id;
+            
             GetGenreDetailQueryValidator validator = new GetGenreDetailQueryValidator();
             validator.ValidateAndThrow(query);
 

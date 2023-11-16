@@ -41,10 +41,11 @@ namespace WebApi.Controllers
         {
             GetBookDetailQuery query = new GetBookDetailQuery(_context, _mapper);
             query.BookId = id;
+
             GetBookDetailQueryValidator validator = new GetBookDetailQueryValidator();
             validator.ValidateAndThrow(query);
-            var result = query.Handle();
 
+            var result = query.Handle();
             return Ok(result);
         }
 
@@ -53,12 +54,12 @@ namespace WebApi.Controllers
         public IActionResult AddBook([FromBody] CreateBookModel newBook)
         {
             CreateBookCommand command = new CreateBookCommand(_context, _mapper);
-
             command.Model = newBook;
+
             CreateBookCommandValidator validator = new CreateBookCommandValidator();
             validator.ValidateAndThrow(command);
-            command.Handle();
 
+            command.Handle();
             return Ok("Kitap başarıyla eklendi.");
         }
 
@@ -69,10 +70,11 @@ namespace WebApi.Controllers
             UpdateBookCommand command = new UpdateBookCommand(_context);
             command.Model = updatedBook;
             command.BookId = id;
+
             UpdateBookCommandValidator validator = new UpdateBookCommandValidator();
             validator.ValidateAndThrow(command);
-            command.Handle();
 
+            command.Handle();
             return Ok("Kitap başarıyla güncellendi.");
         }
 
@@ -81,10 +83,11 @@ namespace WebApi.Controllers
         {
             DeleteBookCommand command = new DeleteBookCommand(_context);
             command.BookId = id;
+
             DeleteBookCommandValidator validator = new DeleteBookCommandValidator();
             validator.ValidateAndThrow(command);
-            command.Handle();
 
+            command.Handle();
             return Ok("Kitap başarıyla silindi.");
         }
     }
