@@ -7034,11 +7034,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Project\\02-patika-dot-net-core-orta\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj",
+      "projectUniqueName": "D:\\Project\\02-patika-dot-net-core-orta\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj",
       "projectName": "WebApi.UnitTests",
-      "projectPath": "d:\\Project\\02-patika-dot-net-core-orta\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj",
+      "projectPath": "D:\\Project\\02-patika-dot-net-core-orta\\BookStore\\Tests\\WebApi.UnitTests\\WebApi.UnitTests.csproj",
       "packagesPath": "C:\\Users\\Ahmet\\.nuget\\packages\\",
-      "outputPath": "d:\\Project\\02-patika-dot-net-core-orta\\BookStore\\Tests\\WebApi.UnitTests\\obj\\",
+      "outputPath": "D:\\Project\\02-patika-dot-net-core-orta\\BookStore\\Tests\\WebApi.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",

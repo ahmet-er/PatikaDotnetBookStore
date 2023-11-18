@@ -18,8 +18,7 @@ namespace WebApi.Application.AuthorOperations.Commands.DeleteAuthor
             if (author is null)
                 throw new InvalidOperationException("Silinecek yazar bulunamadı!");
 
-            var haveBook = author.Books.Where(x => x.AuthorId == AuthorId);
-            if (haveBook is not null)
+            if (author.Books.Any())
                 throw new InvalidOperationException("Bu yazarın kitabı olduğu için silemezsiniz");
 
             _context.Authors.Remove(author);

@@ -1,8 +1,6 @@
-using AutoMapper;
 using FluentAssertions;
 using TestSetup;
 using WebApi.Application.BookOperations.Commands.CreateBook;
-using WebApi.Entities;
 
 namespace Application.BookOperations.Commands.CreateBook
 {
@@ -23,11 +21,12 @@ namespace Application.BookOperations.Commands.CreateBook
         {
             //arrange
             CreateBookCommand command = new CreateBookCommand(null, null);
-            command.Model = new CreateBookCommand.CreateBookModel(){
-                Title =  title, 
-                PageCount = pageCount, 
-                PublishDate = DateTime.Now.Date.AddYears(-1), 
-                GenreId = genreId, 
+            command.Model = new CreateBookCommand.CreateBookModel()
+            {
+                Title = title,
+                PageCount = pageCount,
+                PublishDate = DateTime.Now.Date.AddYears(-1),
+                GenreId = genreId,
                 AuthorId = authorId
             };
 
@@ -42,11 +41,12 @@ namespace Application.BookOperations.Commands.CreateBook
         public void WhenDateTimeEqualNowIsGiven_Validator_ShouldBeReturnError()
         {
             CreateBookCommand command = new CreateBookCommand(null, null);
-             command.Model = new CreateBookCommand.CreateBookModel(){
-                Title =  "Lord of the rings", 
-                PageCount = 100, 
-                PublishDate = DateTime.Now.Date, 
-                GenreId = 1, 
+            command.Model = new CreateBookCommand.CreateBookModel()
+            {
+                Title = "Lord of the rings",
+                PageCount = 100,
+                PublishDate = DateTime.Now.Date,
+                GenreId = 1,
                 AuthorId = 1
             };
 
@@ -58,18 +58,22 @@ namespace Application.BookOperations.Commands.CreateBook
         [Fact]
         public void WhenValidInputsAreGiven_Validator_ShouldNotBeReturnError()
         {
+            //arrange
             CreateBookCommand command = new CreateBookCommand(null, null);
-             command.Model = new CreateBookCommand.CreateBookModel(){
-                Title =  "Lord of the rings", 
-                PageCount = 100, 
-                PublishDate = DateTime.Now.Date.AddYears(-2), 
-                GenreId = 1, 
+            command.Model = new CreateBookCommand.CreateBookModel()
+            {
+                Title = "Lord of the rings",
+                PageCount = 100,
+                PublishDate = DateTime.Now.Date.AddYears(-2),
+                GenreId = 1,
                 AuthorId = 1
             };
 
+            //act
             CreateBookCommandValidator validator = new CreateBookCommandValidator();
             var result = validator.Validate(command);
 
+            //assert
             result.Errors.Count.Should().Be(0);
         }
     }
