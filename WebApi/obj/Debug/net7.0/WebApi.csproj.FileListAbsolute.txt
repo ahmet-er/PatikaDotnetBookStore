@@ -39,3 +39,10 @@ d:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\obj\Debug\net7.0\refint\
 d:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\obj\Debug\net7.0\WebApi.pdb
 d:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\obj\Debug\net7.0\WebApi.genruntimeconfig.cache
 d:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\obj\Debug\net7.0\ref\WebApi.dll
+D:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\Project\02-patika-dot-net-core-orta\BookStore\WebApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

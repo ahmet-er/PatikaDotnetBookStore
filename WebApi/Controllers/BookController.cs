@@ -11,9 +11,11 @@ using static WebApi.Application.BookOperations.Commands.CreateBook.CreateBookCom
 using static WebApi.Application.BookOperations.Commands.UpdateBook.UpdateBookCommand;
 using FluentValidation.Results;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebApi.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]s")]
     public class BookController : ControllerBase

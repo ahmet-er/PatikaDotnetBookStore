@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Project\\02-patika-dot-net-core-orta\\BookStore\\WebApi\\WebApi.csproj": {}
+    "D:\\Project\\02-patika-dot-net-core-orta\\BookStore\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "d:\\Project\\02-patika-dot-net-core-orta\\BookStore\\WebApi\\WebApi.csproj": {
+    "D:\\Project\\02-patika-dot-net-core-orta\\BookStore\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Project\\02-patika-dot-net-core-orta\\BookStore\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "D:\\Project\\02-patika-dot-net-core-orta\\BookStore\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "d:\\Project\\02-patika-dot-net-core-orta\\BookStore\\WebApi\\WebApi.csproj",
+        "projectPath": "D:\\Project\\02-patika-dot-net-core-orta\\BookStore\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\Ahmet\\.nuget\\packages\\",
-        "outputPath": "d:\\Project\\02-patika-dot-net-core-orta\\BookStore\\WebApi\\obj\\",
+        "outputPath": "D:\\Project\\02-patika-dot-net-core-orta\\BookStore\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,6 +51,10 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[11.8.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
